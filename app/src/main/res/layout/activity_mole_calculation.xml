@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/welcomebackground"
+    tools:context="com.example.tienh.stoichemistry.MoleCalculation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="What is the grams of your compound?"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:background="#ffffff"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/compoundEdit"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your compound?"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:imeOptions="actionDone"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/compoundEdit"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/moleculeEdit"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/compoundEdit"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Mole"
+        android:id="@+id/calMole"
+        android:layout_below="@+id/moleculeEdit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:layout_alignEnd="@+id/moleculeEdit" />
+</RelativeLayout>

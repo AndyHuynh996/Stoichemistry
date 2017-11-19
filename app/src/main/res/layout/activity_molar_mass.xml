@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomebackground"
+    tools:context="com.example.tienh.stoichemistry.MolarMass">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="249dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What is your Compound?"
+        android:textColor="#ffffff"
+        android:id="@+id/TextPromptMolar"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="#ffffff"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:id="@+id/editText"
+        android:layout_below="@+id/TextPromptMolar"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Molar Mass"
+        android:id="@+id/molarButton"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/outputMolar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/molarButton" />
+
+</RelativeLayout>

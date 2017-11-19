@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Stoichemistry</string>
+    <string name="title_activity_element_info">ElementInfo</string>
+</resources>
